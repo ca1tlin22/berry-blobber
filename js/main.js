@@ -1,3 +1,5 @@
+
+
 // ##########################################################
 // START DO NOT CHANGE ZONE
 // ##########################################################
@@ -27,7 +29,7 @@ var redCurrant = {
   energy: 234,
   carbs: 13.8,
   protein: 1.4
-};
+}
 
 // ##########################################################
 // END DO NOT CHANGE ZONE
@@ -35,6 +37,24 @@ var redCurrant = {
 
 
 // Write your function here, name it `writeBerries`
+var writeBerries = function (berries) {
+  document.write('<h1>Berries</h1>');
+
+  document.write('<ol>');
+
+  document.forEach(function (berry) {
+    document.write('<li>');
+    document.write('<h2>' + berry.name + '</h2>');
+    document.write('<dl>');
+    document.write('<dt>Grows on a shrub?</dt>');
+    document.write('<dd>' + berry.onShrub + '</dd>');
+    document.write('<dt>Energy</dt>');
+    document.write('<dd>' + berry.energy + '</dd>');
+    document.write('<dt>Carbohydrates</dt>');
+    document.write('<dd>' + berry.carbs + '</dd>');
+    document.write('<dt>Protein</dt>');
+    document.write('<dd>' + berry.protein + '</dd>');
+  })
 
 
 // ##########################################################
