@@ -1,9 +1,3 @@
-
-
-// ##########################################################
-// START DO NOT CHANGE ZONE
-// ##########################################################
-
 var blueberries = {
   name: 'Blueberries',
   latin: 'Vaccinium corymbosum',
@@ -29,12 +23,11 @@ var redCurrant = {
   energy: 234,
   carbs: 13.8,
   protein: 1.4
-}
+};
 
 // ##########################################################
 // END DO NOT CHANGE ZONE
 // ##########################################################
-
 
 // Write your function here, name it `writeBerries`
 var writeBerries = function (berries) {
@@ -54,8 +47,9 @@ var writeBerries = function (berries) {
     document.write('<dd>' + berry.carbs + '</dd>');
     document.write('<dt>Protein</dt>');
     document.write('<dd>' + berry.protein + '</dd>');
-  })
-
+    document.write('</ol>');
+  });
+};
 
 // ##########################################################
 // START DO NOT CHANGE ZONE
