@@ -55,7 +55,7 @@ var writeBerries = function (berries){
 
     document.write('<dt>Protein</dt>');
     document.write('<dd>' + berry.protein + 'g' + '</dd>');
-    
+
     document.write('</dl>');
   });
 };
