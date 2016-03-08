@@ -33,10 +33,10 @@ var redCurrant = {
 // ##########################################################
 
 // Write your function here, name it `writeBerries`
-var writeBerries = function (berries) {
+var writeBerries = function (berries){
   document.write('<h1>Berries</h1>');
 
-  document.forEach(function (berry) {
+  berries.forEach(function (berry) {
     document.write('<h2>' + berry.name + '</h2>');
     document.write('<dl>');
 
@@ -46,13 +46,16 @@ var writeBerries = function (berries) {
     } else {
       document.write('<dd>No.</dd>');
     }
-    
+
     document.write('<dt>Energy</dt>');
-    document.write('<dd>' + berry.energy + '</dd>');
+    document.write('<dd>' + berry.energy + 'kJ' + '</dd>');
+
     document.write('<dt>Carbohydrates</dt>');
-    document.write('<dd>' + berry.carbs + '</dd>');
+    document.write('<dd>' + berry.carbs + 'g' + '</dd>');
+
     document.write('<dt>Protein</dt>');
-    document.write('<dd>' + berry.protein + '</dd>');
+    document.write('<dd>' + berry.protein + 'g' + '</dd>');
+    
     document.write('</dl>');
   });
 };
